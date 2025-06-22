@@ -1,13 +1,18 @@
-// Función para obtener y mostrar el nombre de la URL
+// Función para obtener y mostrar los nombres de la URL
 function mostrarNombre() {
-    // Obtenemos la URL actual (esto es solo un ejemplo)
+    // Obtenemos la URL actual
     const url = window.location.href;
     
-    // Extraemos la parte que nos interesa
-    const partes = url.split('/');
-    const nombreCompleto = partes[partes.length - 1]; // Última parte después de la '/'
+    // Usamos URLSearchParams para obtener los parámetros de la URL
+    const urlParams = new URLSearchParams(window.location.search);
     
-    // Separamos el nombre en caso de que haya un guion
+    // Obtenemos el valor del parámetro (en este caso, lo que sigue a '?')
+    const nombreCompleto = urlParams.get(''); // obtenemos el valor sin nombre de parámetro
+
+    // Si no hay un valor, regresamos
+    if (!nombreCompleto) return;
+    
+    // Separamos los nombres con el guion
     const nombres = nombreCompleto.split('-');
     
     // Unimos los nombres con un espacio
