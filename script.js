@@ -7,7 +7,7 @@ function mostrarNombre() {
     const urlParams = new URLSearchParams(window.location.search);
     
     // Obtenemos el valor del parámetro (en este caso, lo que sigue a '?')
-    const nombreCompleto = urlParams.get(''); // obtenemos el valor sin nombre de parámetro
+    const nombreCompleto = urlParams.get('invitados'); // obtenemos el valor sin nombre de parámetro
 
     // Si no hay un valor, regresamos
     if (!nombreCompleto) return;
