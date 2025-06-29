@@ -4,7 +4,7 @@
 2. Commit and push your changes to GitHub.
 3. Run the following command to deploy:
 
-    npm run deploy
+    
 
 This will build your Vite project and publish the `dist` folder to the `gh-pages` branch for GitHub Pages hosting.
 
