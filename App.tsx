@@ -64,7 +64,7 @@ const App: React.FC = () => {
 
         {/* Location Section */}
         <section className="bg-brand-red text-cream py-20 px-4 text-center">
-          <h2 className="font-sans text-7xl md:text-8xl mb-12">¿DONDE?</h2>
+          <h2 className="font-sans text-7xl md:text-8xl mb-12">¿DÓNDE?</h2>
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
             <div className="text-center md:text-left">
               <p className="font-bold text-xl">ALQUERÍA KUKALA</p>
